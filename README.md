@@ -1,2 +1,2 @@
-# suedaozbek-star.github.io
-suedaozbek homepage
+# ADS 352 Dersi 
+Ders ödevi için site oluşturma deposudur
