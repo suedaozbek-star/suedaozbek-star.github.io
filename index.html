@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ads-352 sitesi sueda</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:#cbd5e1;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 60px;
+    background:
+    linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.95)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop') center/cover;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.btn-primary:hover{
+    background:#0ea5e9;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.btn-outline:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+/* SECTION */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#94a3b8;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:18px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:15px;
+    color:#cbd5e1;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KişiselSayfa</div>
+
+            <div class="menu">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#hakkimda">Hakkımda</a>
+                <a href="#yetenekler">Yetenekler</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="anasayfa">
+    <div class="hero-content">
+
+        <h1>Merhaba, Ben <span>Sueda</span></h1>
+
+        <p>
+            Açık Kaynak Yazılım Geliştirme ADS-352 dersi için oluşturulmuştur.
+        </p>
+
+        <div class="buttons">
+            <a href="#iletisim" class="btn btn-primary">İletişime Geç</a>
+            <a href="#hakkimda" class="btn btn-outline">Daha Fazla</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="hakkimda">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Hakkımda</h2>
+            <p>Bu site ADS352 açık kaynak yazılım geliştirme dersi ödevi için oluşturulmuştur</p>
+        </div>
+
+        <div class="about">
+
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Profil">
+
+            <div class="about-text">
+                <p>
+                    Merhaba! Ben yazılım geliştirme ve kullanıcı deneyimi tasarımıyla ilgileniyorum.
+                    Modern ve performans odaklı web siteleri oluşturmayı seviyorum.
+                </p>
+
+                <p>
+                    HTML, CSS, JavaScript ve modern frontend teknolojileriyle projeler geliştiriyorum.
+                    Sürekli öğrenmek ve yeni teknolojileri keşfetmek benim için büyük bir tutku.
+                </p>
+
+                <a href="#" class="btn btn-primary">CV İndir</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="yetenekler">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Yetenekler</h2>
+            <p>Neler yapabiliyorum?</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Web Tasarım</h3>
+                <p>
+                    Modern, estetik ve responsive arayüzler tasarlıyorum.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>
+                    HTML, CSS, JavaScript ve React ile hızlı web uygulamaları geliştiriyorum.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>UI / UX</h3>
+                <p>
+                    Kullanıcı deneyimini ön planda tutan sade ve etkili tasarımlar oluşturuyorum.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="iletisim">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>İletişim</h2>
+            <p>Bana ulaşabilirsiniz</p>
+        </div>
+
+        <div class="contact">
+            <p>📧 mail@example.com</p>
+            <p>📱 instagram.com/kullaniciadi</p>
+
+            <div class="buttons">
+                <a href="mailto:mail@example.com" class="btn btn-primary">
+                    Mail Gönder
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 ADS-352 Tüm Hakları Saklıdır.
+</footer>
+
+</body>
+</html>
